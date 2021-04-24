@@ -1,6 +1,6 @@
 package org.pizza;
 
-public class CaliforniaPizzaStore implements PizzaStore {
+public class CaliforniaPizzaStore extends AbstractPizzaStore {
     private Pizza pizza;
 
     public CaliforniaPizzaStore(Pizza pizza) {
@@ -11,4 +11,11 @@ public class CaliforniaPizzaStore implements PizzaStore {
     public void makePizza() {
         pizza.prepare();
     }
+
+    @Override
+    public void cutPizza() {
+
+    }
+
+
 }
