@@ -1,7 +1,14 @@
 package org.pizza;
 
-public interface PizzaStore {
-    void makePizza();
+public class PizzaStore {
 
-    void cutPizza();
+    SimplePizzaFactory simplePizzaFactory = new SimplePizzaFactory();
+
+     public void orderPizza(String pizzaType) {
+        Pizza pizza = simplePizzaFactory.createPizza(pizzaType);
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+    }
 }
