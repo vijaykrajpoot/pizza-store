@@ -5,8 +5,8 @@ import org.pizza.*;
 public class CreatePizza {
 
     public static void main(String[] args) {
-
-        PizzaStore pizzaStore=new PizzaStore();
+        SimplePizzaFactory simplePizzaFactory=new SimplePizzaFactory();
+        PizzaStore pizzaStore=new PizzaStore(simplePizzaFactory);
         pizzaStore.orderPizza("chicken");
         pizzaStore.orderPizza("cheese");
 

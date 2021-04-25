@@ -2,9 +2,13 @@ package org.pizza;
 
 public class PizzaStore {
 
-    SimplePizzaFactory simplePizzaFactory = new SimplePizzaFactory();
+   private SimplePizzaFactory simplePizzaFactory ;
 
-     public void orderPizza(String pizzaType) {
+    public PizzaStore(SimplePizzaFactory simplePizzaFactory) {
+        this.simplePizzaFactory = simplePizzaFactory;
+    }
+
+    public void orderPizza(String pizzaType) {
         Pizza pizza = simplePizzaFactory.createPizza(pizzaType);
         pizza.prepare();
         pizza.bake();
