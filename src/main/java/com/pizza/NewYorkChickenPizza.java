@@ -1,6 +1,6 @@
-package org.pizza;
+package com.pizza;
 
-public class ChickenPizza implements Pizza {
+public class NewYorkChickenPizza implements Pizza {
     @Override
     public void prepare() {
         System.out.println("Preparing Chicken Pizza");
