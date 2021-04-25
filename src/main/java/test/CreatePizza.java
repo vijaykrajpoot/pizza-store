@@ -1,5 +1,6 @@
 package test;
 
+import com.pizza.store.IndianPizzaStore;
 import com.pizza.store.NewYorkPizzaStore;
 import com.pizza.store.PizzaStore;
 
@@ -9,6 +10,10 @@ public class CreatePizza {
 
         PizzaStore pizzaStore=new NewYorkPizzaStore();
         pizzaStore.orderPizza("cheese");
+
+
+        pizzaStore=new IndianPizzaStore();
+        pizzaStore.orderPizza("tandoori");
 
     }
 }
