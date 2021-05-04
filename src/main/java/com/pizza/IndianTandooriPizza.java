@@ -1,23 +1,19 @@
 package com.pizza;
 
-public class IndianTandooriPizza implements Pizza {
+public class IndianTandooriPizza extends Pizza {
     @Override
     public void prepare() {
         System.out.println("Prepare Tandoori pizza");
     }
 
     @Override
-    public void bake() {
-        System.out.println("Bake Tandoori pizza");
+    public void setName(String name) {
+        super.setName(name);
     }
 
     @Override
-    public void cut() {
-        System.out.println("Cut Tandoori pizza");
-    }
-
-    @Override
-    public void box() {
-        System.out.println("Boxed Tandoori pizza");
+    public String getName() {
+        return super.getName();
     }
 }
+

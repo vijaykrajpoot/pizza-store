@@ -2,6 +2,7 @@ package com.pizza.store;
 
 import com.pizza.NewYorkCheezePizza;
 import com.pizza.NewYorkChickenPizza;
+import com.pizza.Pizza;
 
 public class NewYorkPizzaStore extends PizzaStore {
     @Override

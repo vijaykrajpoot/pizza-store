@@ -1,23 +1,8 @@
 package com.pizza;
 
-public class IndianSaagPaneerPizza implements Pizza {
+public class IndianSaagPaneerPizza extends Pizza {
     @Override
-    public void prepare() {
-        System.out.println("Prepare SaagPaneer pizza");
-    }
+    void prepare() {
 
-    @Override
-    public void bake() {
-        System.out.println("Bake SaagPaneer pizza");
-    }
-
-    @Override
-    public void cut() {
-        System.out.println("Cut SaagPaneer pizza");
-    }
-
-    @Override
-    public void box() {
-        System.out.println("Boxed SaagPaneer pizza");
     }
 }

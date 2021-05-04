@@ -5,6 +5,7 @@ import com.pizza.ingredient.*;
 import java.util.Arrays;
 
 public abstract class Pizza {
+    
     protected String name;
     protected Dough dough;
     protected Sauce sauce;
@@ -15,19 +16,19 @@ public abstract class Pizza {
     abstract void prepare();
 
 
-    void bake() {
+    public void bake() {
         System.out.println("Baking....");
     }
 
-    void cut() {
+    public void cut() {
         System.out.println("Cut...");
     }
 
-    void box() {
+    public void box() {
         System.out.println("Boxing it");
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
