@@ -2,8 +2,8 @@ package com.pizza.store;
 
 import com.pizza.*;
 
-public class IndianPizzaStore extends PizzaStore {
-    @Override
+public class IndianPizzaStore {
+
     Pizza createPizza(String pizzaType) {
         Pizza pizza = null;
         if (pizzaType.equalsIgnoreCase("buttermasala")) {
