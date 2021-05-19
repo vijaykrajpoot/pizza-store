@@ -3,20 +3,16 @@ package com.pizza.store;
 import com.pizza.Pizza;
 import com.pizza.ingredient.factory.SimplePizzaFactory;
 
-public class PizzaStore {
-    private final SimplePizzaFactory simplePizzaFactory;
-
-    public PizzaStore(SimplePizzaFactory simplePizzaFactory) {
-        this.simplePizzaFactory = simplePizzaFactory;
-    }
+public abstract class PizzaStore {
 
     public Pizza orderPizza(String pizzaType) {
-        Pizza pizza = simplePizzaFactory.createPizza(pizzaType);
+        Pizza pizza = createPizza(pizzaType);
         pizza.bake();
         pizza.cut();
         pizza.box();
         return pizza;
     }
 
+    abstract protected Pizza createPizza(String pizzaType);
 
 }

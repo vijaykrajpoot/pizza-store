@@ -4,13 +4,16 @@ import com.pizza.NewYorkCheezePizza;
 import com.pizza.NewYorkChickenPizza;
 import com.pizza.Pizza;
 
-public class NewYorkPizzaStore  {
+public class NewYorkPizzaStore extends PizzaStore {
 
-    Pizza createPizza(String pizzaType) {
+    @Override
+    protected Pizza createPizza(String pizzaType) {
         Pizza pizza = null;
-        if (pizzaType.equalsIgnoreCase("cheese")) {
+        if (pizzaType.equalsIgnoreCase("cheeze")) {
+            System.out.println("Preparing  " + pizzaType + "pizza ");
             pizza = new NewYorkCheezePizza();
         } else if (pizzaType.equalsIgnoreCase("chicken")) {
+            System.out.println("Preparing  " + pizzaType + "pizza ");
             pizza = new NewYorkChickenPizza();
         } else {
             return null;
