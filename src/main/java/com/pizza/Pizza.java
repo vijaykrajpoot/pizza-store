@@ -1,18 +1,15 @@
 package com.pizza;
 
-import com.pizza.ingredient.*;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public abstract class Pizza {
 
     protected String name;
-    protected String dough;
-    protected String sauce;
+    protected String dough = "Thin Crust";
+    protected String sauce = "Creamy Alfredo";
     protected List<String> toppings = new ArrayList<>();
-    protected String cheese;
+    protected String cheese = "Mozzarella";
 
 
     public void prepare() {

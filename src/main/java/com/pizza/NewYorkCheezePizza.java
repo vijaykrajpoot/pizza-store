@@ -8,7 +8,7 @@ public class NewYorkCheezePizza extends Pizza {
         name = "NewYorkCheezePizza";
         cheese = "Mozzarella";
         dough = "Thin Crust";
-        toppings = Arrays.asList("Olive");
+        toppings = Arrays.asList("Black olives", "Mushrooms");
     }
 
 
