@@ -7,7 +7,7 @@ public class NewYorkCheezePizza extends Pizza {
     public NewYorkCheezePizza() {
         name = "NewYorkCheezePizza";
         cheese = "Mozzarella";
-        dough = "This Crust";
+        dough = "Thin Crust";
         toppings = Arrays.asList("Olive");
     }
 
