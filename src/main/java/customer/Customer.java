@@ -1,8 +1,6 @@
-package test;
+package customer;
 
-import com.pizza.IndianTandooriPizza;
 import com.pizza.Pizza;
-import com.pizza.ingredient.factory.SimplePizzaFactory;
 import com.pizza.store.IndianPizzaStore;
 import com.pizza.store.NewYorkPizzaStore;
 import com.pizza.store.PizzaStore;

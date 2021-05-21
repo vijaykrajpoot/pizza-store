@@ -5,7 +5,6 @@ import com.pizza.NewYorkChickenPizza;
 import com.pizza.Pizza;
 
 public class NewYorkPizzaStore extends PizzaStore {
-
     @Override
     protected Pizza createPizza(String pizzaType) {
         Pizza pizza = null;
