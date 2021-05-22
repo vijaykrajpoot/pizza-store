@@ -12,13 +12,11 @@ public class NewYorkCheezePizza extends Pizza {
         this.pizzaIngredientFactory = pizzaIngredientFactory;
     }
 
-    public NewYorkCheezePizza() {
-        name = "NewYorkCheezePizza";
-        cheese = "Mozzarella";
-        dough = "Thin Crust";
-        toppings = Arrays.asList("Black olives", "Mushrooms");
+    @Override
+    void prepare() {
+        dough = pizzaIngredientFactory.createDough();
+        cheese = pizzaIngredientFactory.createCheese();
+        veggies = pizzaIngredientFactory.creatVeggies();
     }
 
-
 }
-

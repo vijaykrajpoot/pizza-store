@@ -5,6 +5,8 @@ import com.pizza.ingredient.Dough;
 import com.pizza.ingredient.Sauce;
 import com.pizza.ingredient.Veggies;
 
+import java.util.List;
+
 public interface PizzaIngredientFactory {
 
     Dough createDough();
@@ -13,7 +15,7 @@ public interface PizzaIngredientFactory {
 
     Cheese createCheese();
 
-    Veggies [] creatVeggies();
+    List<Veggies> creatVeggies();
 
 
 }

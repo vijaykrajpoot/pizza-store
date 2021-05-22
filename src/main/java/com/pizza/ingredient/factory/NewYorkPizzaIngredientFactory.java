@@ -2,6 +2,9 @@ package com.pizza.ingredient.factory;
 
 import com.pizza.ingredient.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class NewYorkPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
@@ -11,17 +14,19 @@ public class NewYorkPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
     public Sauce createSauces() {
-        return new Sauce() {
-        };
+        return new MarinaraSauce();
     }
 
     @Override
     public Cheese createCheese() {
-        return null;
+        return new ReggianoCheese();
     }
 
     @Override
-    public Veggies[] creatVeggies() {
-        return new Veggies[0];
+    public List<Veggies> creatVeggies() {
+        return Arrays.asList(
+                new Onion(),
+                new Garlic()
+        );
     }
 }
