@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class NewYorkChickenPizza extends Pizza {
     @Override
-    void prepare() {
+    public void prepare() {
 
     }
 

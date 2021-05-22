@@ -16,18 +16,6 @@ public abstract class Pizza {
     protected List<Veggies> veggies;
     protected Cheese cheese;
 
-
-//    public void prepare() {
-//        System.out.println("Preparing '" + name + "' pizza");
-//        System.out.println("Tossing : '" + dough);
-//        System.out.println("Adding :" + cheese);
-//        System.out.println("Adding :" + sauce);
-//        System.out.println("Adding toppings:  " + veggies.toString());
-//
-//
-//    }
-
-
     public void bake() {
         System.out.println("Baking....");
     }
@@ -40,14 +28,6 @@ public abstract class Pizza {
         System.out.println("Boxing it");
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    abstract void prepare();
+    public abstract void prepare();
 
 }
