@@ -18,8 +18,6 @@ public abstract class Pizza {
         System.out.println("Adding :" + cheese);
         System.out.println("Adding :" + sauce);
         System.out.println("Adding toppings:  " + toppings.toString());
-
-
     }
 
 
